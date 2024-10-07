@@ -21,10 +21,14 @@ public class Student {
         this.email = email;
         this.course = course;
     }
-    @Override
-    public String toString(){
-        return "Student details are: ";
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", course='" + course + '\'' +
+                '}';
     }
 
     public void setName(String name) {
@@ -37,5 +41,17 @@ public class Student {
 
     public void setCourse(String course) {
         this.course = course;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getCourse() {
+        return course;
     }
 }
