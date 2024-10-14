@@ -24,11 +24,10 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", course='" + course + '\'' +
-                '}';
+        return
+                "name:" + name + ',' +
+                "email:" + email + ',' +
+                "course:" + course + '.';
     }
 
     public void setName(String name) {
@@ -43,15 +42,5 @@ public class Student {
         this.course = course;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public String getCourse() {
-        return course;
-    }
 }
